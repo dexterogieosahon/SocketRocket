@@ -1,12 +1,13 @@
 Pod::Spec.new do |s|
-  s.name               = 'SocketRocket-pre'
+  s.name               = 'SocketRocketParseLiveQuery'
   s.version            = '0.6.0-beta.1'
   s.summary            = 'A conforming WebSocket (RFC 6455) client library for iOS, macOS and tvOS.'
   s.homepage           = 'https://github.com/facebook/SocketRocket'
   s.authors            = { 'Nikita Lutsenko' => 'nlutsenko@me.com', 'Dan Federman' => 'federman@squareup.com', 'Mike Lewis' => 'mikelikespie@gmail.com' }
   s.license            = 'BSD'
-  s.source             = { :git => 'https://github.com/flovilmart/SocketRocket.git', :tag => s.version.to_s }
+  s.source             = { :git => 'https://github.com/parse-server-modules/SocketRocket.git', :tag => s.version.to_s }
   s.requires_arc       = true
+  s.module_name        = 'SocketRocket'
   
   s.source_files       = 'SocketRocket/**/*.{h,m}'
   s.public_header_files = 'SocketRocket/*.h'
